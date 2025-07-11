@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #4b0082, #8a2be2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  background: rgba(75, 0, 130, 0.85);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 0 40px rgba(138, 43, 226, 0.4);
+  max-width: 400px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f0e6ff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ddd0ff;
+  margin-bottom: 25px;
+}
+
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: rgba(80, 0, 140, 0.6);
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(200, 150, 255, 0.3);
+}
+
+#clock {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+#ampm {
+  font-size: 1.2rem;
+  color: #f7d774;
+  margin-left: 10px;
+  align-self: flex-end;
+  text-shadow: 0 0 8px #f7d774;
+}
+
+#date {
+  font-size: 1rem;
+  color: #e0ccff;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #9932cc;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #ba55d3;
+  transform: scale(1.05);
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
